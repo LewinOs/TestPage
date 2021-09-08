@@ -1,4 +1,4 @@
-@media all and (max-width: 800px) {
+@media screen and (max-width:1200px) {
     body{
         outline: none;
         margin: 0;
@@ -86,7 +86,7 @@
     .dropbtn {
         background-color: #3498DB;
         color: white;
-        font-size:max(1em, min(1em, calc(100vw * 4 / 75)));
+        font-size:0.6rem;
         border: none;
         cursor: pointer;
     }
@@ -107,16 +107,21 @@
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        min-width: 70px;
+        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
 
     /* Ссылки внутри выпадающего списка */
     .dropdown-content a {
+        font-size: 0.5rem;
         color: black;
-        padding: 12px 16px;
+        padding: 3px 7px;
         text-decoration: none;
         display: block;
+        text-shadow: none;
     }
+    .show {display:block;}
+
+    p, span { display: inline; }
 }
