@@ -4,6 +4,8 @@ import {render} from "./render.js";
 import {renderJson} from "./JsonRequest.js";
 
 
+
+console.log(1)
 // <-- Рендер таблицы-->
 render(JsonRequest)
 
