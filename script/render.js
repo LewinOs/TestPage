@@ -3,8 +3,8 @@ export const render = (array)=> {
     // <-- Функция для проверки количества символов, и последующим превращением лишних символов в ... -->
     const checkCountOfSymbol=(node)=>{
         let str = node.innerText;
-        let begin_str = str.substring(0,87);
-        let end_str = str.substring(87,str.length);
+        let begin_str = str.substring(0,85);
+        let end_str = str.substring(85,str.length);
         node.children[0].innerText = begin_str +'...';
         node.insertAdjacentHTML('beforeend',`
             <span style = "display: none">${end_str}</span>
